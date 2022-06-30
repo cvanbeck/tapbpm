@@ -34,7 +34,7 @@ button.addEventListener("click",() => {
     bpmFinder();
     if (timeArray.length > 4){
         console.log("TEST")
-        timeArray.shift(1)
+        timeArray.shift(0)
     }
     console.log(timeArray)
 })
