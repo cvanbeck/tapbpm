@@ -26,10 +26,16 @@ function bpmFinder(){
     console.log(Math.round(bpm))
 }
 
+
 const button = document.querySelector("button")
 button.addEventListener("click",() => {
     differenceInTime();
     averageTimeBetween();
     bpmFinder();
+    if (timeArray.length > 4){
+        console.log("TEST")
+        timeArray.shift(1)
+    }
+    console.log(timeArray)
 })
 
